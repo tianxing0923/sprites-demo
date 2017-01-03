@@ -1,0 +1,25 @@
+@import '../partials/sidebar.less';
+.sidebar:extend(.sidebar) {
+  .thumbtackbar {
+    background-color: #302623;
+    .thumbtack {
+      background: url(../../images/cc/thumbtack_right.png) no-repeat 0 0;
+    }
+  }
+  .content {
+    background-color: #40322f;
+    .nav {
+      li {
+        .item {
+          width: 125px;
+          height: 34px;
+          line-height: 34px;
+          background-image: url(../../images/cc/bg_nav.png);
+          .angle {
+            top: 15px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.spr-bg-download {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 132px;
+  height: 41px;
+}
+.spr-bg-nav {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -83px;
+  width: 124px;
+  height: 33px;
+}
+.spr-bg-server {
+  background-image: url(../images/sprite.png);
+  background-position: -132px 0px;
+  width: 110px;
+  height: 24px;
+}
+.spr-qq-group {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -41px;
+  width: 125px;
+  height: 42px;
+}
+.spr-thumbtack-left {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -116px;
+  width: 15px;
+  height: 114px;
+}
+.spr-thumbtack-right {
+  background-image: url(../images/sprite.png);
+  background-position: -15px -116px;
+  width: 15px;
+  height: 114px;
+}

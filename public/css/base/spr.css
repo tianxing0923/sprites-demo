@@ -1,0 +1,87 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.spr {
+  display: inline-block;
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+}
+.spr-bg-download {
+  background-position: 0px 0px;
+  width: 132px;
+  height: 41px;
+}
+.spr-bg-nav {
+  background-position: -132px 0px;
+  width: 124px;
+  height: 33px;
+}
+.spr-bg-nav:hover {
+  background-position: 0px -83px;
+  width: 125px;
+  height: 34px;
+}
+.spr-bg-server {
+  background-position: -132px -33px;
+  width: 110px;
+  height: 24px;
+}
+.spr-qq-group {
+  background-position: 0px -41px;
+  width: 125px;
+  height: 42px;
+}
+.spr-thumbtack-left {
+  background-position: 0px -117px;
+  width: 15px;
+  height: 114px;
+}
+.spr-thumbtack-right {
+  background-position: -15px -117px;
+  width: 15px;
+  height: 114px;
+}

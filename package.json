@@ -1,0 +1,22 @@
+{
+  "name": "mlyx-play",
+  "version": "1.0.0",
+  "description": "mokylin game platform official website",
+  "private": true,
+  "repository": "https://168.168.1.24:8443/svn/MOKYLIN/mlyx/trunk/play",
+  "engines": {
+    "node": ">= 6.2.0"
+  },
+  "scripts": {
+    "start": "set NODE_ENV=development&&nodemon bin/www",
+    "test": "pm2 start process.json",
+    "pm2": "pm2 start process.json --env production"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-if": "^2.0.1",
+    "gulp-less": "^3.0.5",
+    "gulp.spritesmith": "^6.2.1",
+    "merge-stream": "^1.0.1"
+  }
+}

@@ -1,0 +1,26 @@
+.index-wrap {
+  position: relative;
+  height: 100%;
+  background-color: @index-bgcolor;
+  color: @index-color;
+  .iframe-box {
+    position: absolute;
+    top: @topbar-height;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .tips {
+    position: absolute;
+    top: @topbar-height;
+    left: 0;
+    z-index: 2;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: #ff0000;
+  }
+}

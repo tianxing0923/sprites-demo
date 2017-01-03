@@ -1,0 +1,35 @@
+@import '../partials/sidebar.less';
+.sidebar:extend(.sidebar) {
+  .thumbtackbar {
+    background-color: #222225;
+    border-right: 1px solid #3a3d42;
+    .thumbtack {
+      background: url(../../images/bfx/thumbtack_right.png) no-repeat 0 0;
+    }
+  }
+  .content {
+    background-color: #2f3238;
+    .server-name {
+      width: 124px;
+      border: 0;
+      background: url(../../images/bfx/bg_server.png) no-repeat 50% 0;
+      color: #e7b380;
+    }
+    .qq-group {
+      background: url(../../images/bfx/qq_group.jpg) no-repeat 50% 0;
+    }
+    .nav {
+      li {
+        .item {
+          background-image: url(../../images/bfx/bg_nav.png);
+          &.download {
+            width: 132px;
+            height: 41px;
+            line-height: 41px;
+            background-image: url(../../images/bfx/bg_download.png);
+          }
+        }
+      }
+    }
+  }
+}

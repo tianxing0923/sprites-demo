@@ -1,0 +1,40 @@
+@import '../partials/sidebar.less';
+.sidebar:extend(.sidebar) {
+  .thumbtackbar {
+    background-color: #242528;
+    border-right: 1px solid #2d2e31;
+    .thumbtack {
+      background: url(../../images/fyws/thumbtack_right.png) no-repeat 0 0;
+    }
+  }
+  .content {
+    background-color: #202124;
+    .server-name {
+      width: 124px;
+      border: 0;
+      background-image: url(../../images/fyws/bg_server.png);
+      color: #e7b380;
+    }
+    .nav {
+      li {
+        .item {
+          background-image: url(../../images/fyws/bg_nav.png);
+          &.download {
+            background-image: url(../../images/fyws/bg_download.png);
+          }
+        }
+      }
+    }
+    .article-list {
+      li {
+        border-bottom-color: #5a5151;
+        a {
+          color: #8d8e90;
+          &:hover {
+            color: lighten(#8d8e90, 10%)
+          }
+        }
+      }
+    }
+  }
+}
