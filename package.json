@@ -1,16 +1,14 @@
 {
-  "name": "mlyx-play",
+  "name": "sprites-demo",
   "version": "1.0.0",
-  "description": "mokylin game platform official website",
+  "description": "gulp images sprites demo",
   "private": true,
-  "repository": "https://168.168.1.24:8443/svn/MOKYLIN/mlyx/trunk/play",
+  "repository": "https://github.com/tianxing0923/sprites-demo/tree/master",
   "engines": {
     "node": ">= 6.2.0"
   },
   "scripts": {
-    "start": "set NODE_ENV=development&&nodemon bin/www",
-    "test": "pm2 start process.json",
-    "pm2": "pm2 start process.json --env production"
+    "start": "gulp"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
